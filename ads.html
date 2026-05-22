@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advertisementmaking | Aimo Wong</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+
+    <nav class="inner-nav">
+        <div class="layout-container nav-container">
+            <a href="index.html" class="logo-link">AIMO WONG</a>
+            <div class="nav-links">
+                <a href="brand.html">品牌设计</a>
+                <a href="ads.html" class="active">广告制作</a>
+                <a href="personal.html">个人创作</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="category-header">
+        <div class="layout-container category-container">
+            <h1 class="category-title highlight-text">广告制作</h1>
+            <!-- 【修改提示】：请在此替换“广告制作”的实际负责内容 -->
+            <p class="category-desc">
+                美术设计 / 分镜设计 / 平面视效包装
+            </p>
+        </div>
+    </header>
+
+    <section class="project-section">
+        <div class="layout-container project-grid">
+            
+            <!-- ====== 特殊的第1个项目：链接指向特殊汇总页 ads_special.html ====== -->
+            <a href="projects/ads_special.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/ads/cover_01.jpg" alt="项目01封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">项目汇总列表 - ALL</h3>
+                    <p class="project-role">美术设计 / 分镜设计 / 平面视效</p>
+                </div>
+            </a>
+
+            <!-- ====== 常规的后续 8 个项目 ====== -->
+            <a href="projects/ads_02.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/ads/cover_02.jpg" alt="项目02封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">平面视效 - 总览</h3>
+                    <p class="project-role">平面视效包装</p>
+                </div>
+            </a>
+
+            <a href="projects/ads_03.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/ads/cover_03.jpg" alt="项目03封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">分镜设计 - 总览</h3>
+                    <p class="project-role">分镜设计 / 插画设计</p>
+                </div>
+            </a>
+
+            <a href="projects/ads_04.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/ads/cover_04.jpg" alt="项目04封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">ELLA艾拉耳机 - 产品宣传片</h3>
+                    <p class="project-role">美术指导</p>
+                </div>
+            </a>
+
+            <a href="projects/ads_05.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/ads/cover_05.jpg" alt="项目05封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">记忆侦探事务所 - 悬疑故事短剧</h3>
+                    <p class="project-role">美术助理</p>
+                </div>
+            </a>
+
+            <a href="projects/ads_06.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/ads/cover_06.jpg" alt="项目06封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">三亚天悦城 - 品牌TVC</h3>
+                    <p class="project-role">美术指导</p>
+                </div>
+            </a>
+
+            <a href="projects/ads_07.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/ads/cover_07.jpg" alt="项目07封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">入海 - 故事电影短片</h3>
+                    <p class="project-role">执行美术</p>
+                </div>
+            </a>
+
+            <a href="projects/ads_08.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/ads/cover_08.jpg" alt="项目08封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">ESTSME个人私有云 - 产品宣传片</h3>
+                    <p class="project-role">美术指导</p>
+                </div>
+            </a>
+
+            <a href="projects/ads_09.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/ads/cover_09.jpg" alt="项目09封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">猎物 - 故事电影短片</h3>
+                    <p class="project-role">美术指导＆海报设计</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer><p>© 2024 Aimo Wong. All Rights Reserved.</p></footer>
+    <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script>
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) { backToTopBtn.classList.add("show"); } 
+            else { backToTopBtn.classList.remove("show"); }
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>

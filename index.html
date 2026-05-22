@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimo Wong</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <!-- 1. 顶部主视觉区 -->
+    <section class="top-banner">
+        <div class="layout-container banner-container">
+            <div class="left-col banner-left">
+                <h1 class="main-title">CASE<br>SHOWS</h1>
+                <div class="nav-buttons">
+                    <a href="brand.html" class="nav-btn">品牌设计</a>
+                    <a href="ads.html" class="nav-btn">广告制作</a>
+                    <a href="personal.html" class="nav-btn">个人创作</a>
+                </div>
+            </div>
+            <div class="right-col banner-right">
+                <img src="images/hero_illustration.png" alt="Creative Illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 个人介绍区 -->
+    <section class="intro-section">
+        <div class="layout-container intro-container">
+            <div class="left-col intro-image">
+                <img src="images/avatar.png" alt="Aimo Wong">
+            </div>
+            <!-- 这里已恢复为完美的 intro-text 类名 -->
+            <div class="right-col intro-text">
+                <div class="name-block">
+                    <h2 class="name highlight-text">Aimo Wong</h2>
+                    <div class="role">品牌策略 / 视觉策划 / 视觉管理</div>
+                </div>
+                
+                <div class="desc-content">
+                    <p class="desc">
+                        艺术设计学专业，8年设计工作经验，4A公司就职经历。<br>
+                        了解传统广告与新兴互联网广告的投放与运营，熟悉线上、线下广告设计流程。设计风格多变，拥有较强的创意策略、手绘和设计能力。
+                    </p>
+                    
+                    <div class="tags">
+                        <span class="tag-title">TAG :</span>
+                        <span class="tag-item">乐天派</span>
+                        <span class="slash">/</span> 
+                        <span class="tag-item">野兽派</span>
+                        <span class="slash">/</span> 
+                        <span class="tag-item">理想主义者</span>
+                        <span class="slash">/</span> 
+                        <span class="tag-item">发散性思维</span>
+                        <span class="slash">/</span> 
+                        <span class="tag-item">好奇尚异者</span>
+                        <span class="slash">/</span> 
+                        <span class="tag-item">厚积薄发型</span>
+                    </div>
+                    
+                    <p class="email">E-mail: aimo1028@foxmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 服务品牌展示区 -->
+    <section class="brands-section">
+        <div class="carousel">
+            <button class="arrow-btn" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-content">
+                <div class="carousel-slide active">
+                    <div class="section-title-wrap">
+                        <h3 class="section-title highlight-text">服务品牌 - 品牌设计类</h3>
+                    </div>
+                    <img src="images/clients_brand.png" alt="品牌设计客户" class="client-img">
+                </div>
+                <div class="carousel-slide">
+                    <div class="section-title-wrap">
+                        <h3 class="section-title highlight-text">服务品牌 - 广告制作类</h3>
+                    </div>
+                    <img src="images/clients_ads.png" alt="广告制作客户" class="client-img">
+                </div>
+            </div>
+            <button class="arrow-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Aimo Wong. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+        setInterval(nextSlide, 3000);
+    </script>
+</body>
+</html>

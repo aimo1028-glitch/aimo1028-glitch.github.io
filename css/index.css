@@ -1,0 +1,66 @@
+/* =========================================
+   1. 顶部主视觉区 (主页)
+========================================= */
+.top-banner { background-color: var(--main-yellow); padding: 0 20px 100px; }
+.banner-container { align-items: center; }
+.banner-left { padding-bottom: 0; }
+.main-title { font-size: 5.5rem; font-family: Impact, 'Arial Black', sans-serif; line-height: 1; letter-spacing: 2px; margin-bottom: 40px; }
+.nav-buttons { display: flex; flex-direction: column; gap: 15px; max-width: 250px; }
+.nav-btn { text-decoration: none; color: var(--text-black); border: 2px solid var(--text-black); padding: 8px 0; text-align: center; border-radius: 40px; font-weight: bold; font-size: 1.1rem; transition: all 0.3s ease; }
+.nav-btn:hover { background-color: var(--text-black); color: var(--main-yellow); }
+.banner-right { display: flex; justify-content: center; }
+.banner-right img { width: 120%; max-width: none; display: block; }
+
+/* =========================================
+   2. 个人介绍区 (主页)
+========================================= */
+.intro-section { background-color: var(--bg-white); padding: 100px 20px 200px; }
+.intro-container { align-items: center; }
+.intro-image img { width: 100%; height: auto; display: block; }
+.intro-text { display: flex; flex-direction: column; }
+.name-block { width: 100%; margin-bottom: 25px; }
+.name-block .name { font-size: 2.4rem; font-weight: normal; margin-bottom: 12px; line-height: 1; }
+.name-block .role { font-size: 1.25rem; font-weight: bold; color: var(--text-black); }
+.desc-content { width: 100%; }
+.intro-text .desc { font-size: 0.95rem; color: #333; margin-bottom: 25px; text-align: justify; line-height: 1.8; }
+.tags { display: flex; justify-content: space-between; align-items: center; width: 100%; font-size: 0.8rem; font-weight: bold; margin-bottom: 20px; }
+.tag-title { color: #888; }
+.tag-item { color: var(--text-blue); }
+.slash { color: #ccc; font-size: 0.75rem; font-weight: normal; }
+.email { font-style: italic; color: #999; text-decoration: underline; font-size: 0.95rem; }
+
+/* =========================================
+   3. 品牌轮播区 (主页)
+========================================= */
+.brands-section { background-color: var(--bg-white); padding: 0 20px 100px; text-align: center; }
+.carousel { display: flex; align-items: center; justify-content: center; max-width: 1200px; margin: 0 auto; gap: 20px; }
+.carousel-content { flex: 1; overflow: hidden; }
+.carousel-slide { display: none; animation: fadeEffect 0.8s; }
+.carousel-slide.active { display: block; }
+@keyframes fadeEffect { from { opacity: 0; } to { opacity: 1; } }
+.section-title-wrap { margin-bottom: 50px; }
+.section-title { font-size: 1.5rem; font-weight: 900; }
+.client-img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.arrow-btn { background: transparent; border: none; font-size: 2.5rem; color: #ccc; cursor: pointer; padding: 10px; transition: color 0.3s; }
+.arrow-btn:hover { color: var(--text-black); }
+
+/* =========================================
+   4. 主页手机端响应式
+========================================= */
+@media (max-width: 768px) {
+    .layout-container { flex-direction: column; align-items: center; gap: 40px; }
+    .left-col, .right-col { width: 100%; max-width: 450px; }
+    .banner-container { flex-direction: column-reverse; }
+    .banner-left { text-align: center; }
+    .nav-buttons { margin: 0 auto; }
+    .banner-right img { width: 100%; }
+    .intro-container { text-align: center; }
+    .name-block .role { text-align: center; }
+    .intro-text .desc { text-align: center; }
+    .tags { flex-wrap: wrap; justify-content: center; gap: 8px; }
+    .slash { display: none; }
+    .carousel { position: relative; }
+    .arrow-btn { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(255,255,255,0.7); border-radius: 50%; }
+    .arrow-btn:first-of-type { left: -10px; }
+    .arrow-btn:last-of-type { right: -10px; }
+}

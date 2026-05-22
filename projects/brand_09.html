@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 【修改点1】：浏览器标签名 -->
+    <title>chinamerchantsbank | Aimo Wong</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+
+    <!-- 顶部导航 -->
+    <nav class="detail-nav">
+        <div class="layout-container nav-container">
+            <a href="../index.html" class="logo-link">AIMO WONG</a>
+            <div class="nav-links">
+                <!-- 【修改点2】：当前属于哪个大类，就把 class="active" 移给谁 -->
+                <a href="../brand.html" class="active">品牌设计</a>
+                <a href="../ads.html">广告制作</a>
+                <a href="../personal.html">个人创作</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 项目头部信息 -->
+    <header class="project-header">
+        <div class="return-wrap">
+            <!-- 【修改点3】：根据大类修改返回链接 -->
+            <a href="../brand.html" class="return-link">↵ 返回列表</a>
+        </div>
+        
+        <div class="title-wrap">
+            <!-- 【修改点4.1】：主标题（品牌名） -->
+            <h1 class="project-title highlight-text">招商银行</h1>
+            
+            <!-- 【修改点4.2】：副标题（项目总称）。如果某个项目名字短不需要拆分，直接把这一整行删掉即可。 -->
+            <h2 class="project-subtitle">M+会员权益</h2>
+            
+            <!-- 【修改点5】：项目描述（注意看这里是如何用 <br> 进行换行和分段的） -->
+            <p class="project-description">
+                招商银行＆肯德基<br>
+                系列平面海报<br>
+            </p>
+        </div>
+    </header>
+
+    <!-- 项目图文展示区 -->
+    <section class="project-gallery">
+        <!-- 
+           【修改点6】：这里预设了 20 张图的代码。
+           你只需要把你实际没有的图片行直接“删除”即可。
+           记得把 brand 和 project_01 换成对应的文件夹名字。
+        -->
+        <img src="../images/brand/project_09/01.jpg" alt="项目详情图 1">
+        <img src="../images/brand/project_09/02.jpg" alt="项目详情图 2">
+        <img src="../images/brand/project_09/03.jpg" alt="项目详情图 3">
+        <img src="../images/brand/project_09/04.jpg" alt="项目详情图 4">
+    </section>
+
+    <footer>
+        <p>© 2024 Aimo Wong. All Rights Reserved.</p>
+    </footer>
+
+    <!-- 返回顶部悬浮按钮 -->
+    <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script>
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) { backToTopBtn.classList.add("show"); } 
+            else { backToTopBtn.classList.remove("show"); }
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>branddesign | Aimo Wong</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="inner-nav">
+        <div class="layout-container nav-container">
+            <a href="index.html" class="logo-link">AIMO WONG</a>
+            <div class="nav-links">
+                <a href="brand.html" class="active">品牌设计</a>
+                <a href="ads.html">广告制作</a>
+                <a href="personal.html">个人创作</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 介绍区 -->
+    <header class="category-header">
+        <div class="layout-container category-container">
+            <h1 class="category-title highlight-text">品牌设计</h1>
+            <p class="category-desc">
+                策略定位 / 品牌故事 / Slogan设计<br>
+                Logo设计 / VI设计 / 包装设计 / IP设计<br>
+                营销策划 / 运营设计 / 海报设计 / 空间设计
+            </p>
+        </div>
+    </header>
+
+    <!-- 项目列表区 (9个项目) -->
+    <section class="project-section">
+        <div class="layout-container project-grid">
+            
+            <a href="projects/brand_01.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/brand/cover_01.jpg" alt="项目01封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">森瑞梦SUNRIMOON - 全案设计</h3>
+                    <p class="project-role">策略定位/品牌故事/Slogan/Logo/VI</p>
+                </div>
+            </a>
+
+            <a href="projects/brand_02.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/brand/cover_02.jpg" alt="项目02封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">觅十RIOMEE - 全案设计</h3>
+                    <p class="project-role">策略定位/Logo/包装/运营</p>
+                </div>
+            </a>
+
+            <a href="projects/brand_03.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/brand/cover_03.jpg" alt="项目03封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">朗非LEFEET - VI设计＆运营设计</h3>
+                    <p class="project-role">PPT/包装/宣传册/周边/T恤/官网</p>
+                </div>
+            </a>
+
+            <!-- ================= 修改提示：项目 04 到 09 ================= -->
+            <!-- 之后请修改下方代码中对应的 "项目名称" 和 "负责内容" -->
+            
+            <a href="projects/brand_04.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/brand/cover_04.jpg" alt="项目04封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">有米MIX - VI设计＆运营设计</h3>
+                    <p class="project-role">PPT/名片/T恤/官网</p>
+                </div>
+            </a>
+
+            <a href="projects/brand_05.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/brand/cover_05.jpg" alt="项目05封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">爱玩I-ONE - Logo设计＆VI设计</h3>
+                    <p class="project-role">Logo/VI/名片</p>
+                </div>
+            </a>
+
+            <a href="projects/brand_06.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/brand/cover_06.jpg" alt="项目06封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">闪电小子Super Flash - 卡通IP形象设计</h3>
+                    <p class="project-role">I-ONE品牌卡通IP形象</p>
+                </div>
+            </a>
+
+            <a href="projects/brand_07.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/brand/cover_07.jpg" alt="项目07封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">托比Twebi＆大春Ohar - 卡通IP形象设计</h3>
+                    <p class="project-role">微信动态表情包</p>
+                </div>
+            </a>
+
+            <a href="projects/brand_08.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/brand/cover_08.jpg" alt="项目08封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">智己汽车 - AI上我的MVP</h3>
+                    <p class="project-role">系列平面海报</p>
+                </div>
+            </a>
+
+            <a href="projects/brand_09.html" class="project-card">
+                <div class="cover-wrapper"><img src="images/brand/cover_09.jpg" alt="项目09封面"></div>
+                <div class="project-info">
+                    <h3 class="project-name">招商银行 - M+会员权益</h3>
+                    <p class="project-role">系列平面海报</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- 页脚与返回顶部按钮 -->
+    <footer><p>© 2024 Aimo Wong. All Rights Reserved.</p></footer>
+    <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script>
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) { backToTopBtn.classList.add("show"); } 
+            else { backToTopBtn.classList.remove("show"); }
+        };
+        function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    </script>
+</body>
+</html>
