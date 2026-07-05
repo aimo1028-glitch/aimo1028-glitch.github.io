@@ -17,10 +17,10 @@
 .intro-section { background-color: var(--bg-white); padding: 100px 20px 200px; }
 .intro-container { align-items: center; }
 .intro-image img { width: 100%; height: auto; display: block; }
-.intro-text { display: flex; flex-direction: column; }
+.intro-text { display: flex; flex-direction: column; margin-top: 80px; }
 .name-block { width: 100%; margin-bottom: 25px; }
 .name-block .name { font-size: 2.4rem; font-weight: normal; margin-bottom: 12px; line-height: 1; }
-.name-block .role { font-size: 1.25rem; font-weight: bold; color: var(--text-black); }
+.name-block .role { font-size: 1.15rem; font-weight: bold; color: var(--text-black); }
 .desc-content { width: 100%; }
 .intro-text .desc { font-size: 0.95rem; color: #333; margin-bottom: 25px; text-align: justify; line-height: 1.8; }
 .tags { display: flex; justify-content: space-between; align-items: center; width: 100%; font-size: 0.8rem; font-weight: bold; margin-bottom: 20px; }
